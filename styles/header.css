@@ -1,0 +1,57 @@
+header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+header > section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+h1.title {
+  color: rgb(var(--font));
+  font-size: 32px;
+  font-weight: 500;
+}
+
+span.taskListLength {
+  background-color: rgba(var(--font), 0.9);
+  color: var(--background);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: var(--rounded);
+  padding: 4px 8px;
+}
+
+header > form {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+button.addTaskButton {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 16px;
+  padding: 10px;
+  color: rgb(var(--font));
+  background-color: var(--primary);
+  border-radius: var(--rounded);
+}
+
+input.addTaskInput {
+  width: 100%;
+  border: none;
+  color: rgb(var(--font));
+  border-radius: var(--rounded);
+  background-color: rgba(var(--font), 0.1);
+  font-size: 16px;
+  padding: 12px;
+}
+
+input.addTaskInput:focus-visible {
+  outline: solid 2px var(--primary);
+}

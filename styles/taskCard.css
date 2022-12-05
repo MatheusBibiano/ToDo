@@ -1,0 +1,89 @@
+li.taskCard {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  background-color: rgba(var(--font), 0.1);
+  padding: 12px;
+  border-radius: var(--rounded);
+}
+
+div.taskContent,
+div.options {
+  display: flex;
+  align-items: center;
+}
+
+div.taskContent {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+button.unchecked {
+  background-color: transparent;
+  min-width: 18px;
+  width: 18px;
+  height: 18px;
+  border: solid 2px rgba(var(--font), 0.3);
+  border-radius: calc(var(--rounded) - 10px);
+}
+
+button.checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--done);
+  min-width: 18px;
+  width: 18px;
+  height: 18px;
+  border-radius: calc(var(--rounded) - 10px);
+}
+
+button.checked > span {
+  font-size: 18px;
+  color: rgb(var(--font));
+}
+
+input.checkbox {
+  display: none;
+}
+
+div.taskContent > span {
+  color: rgba(var(--font), 0.8);
+  font-size: 16px;
+}
+
+div.options {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+button.option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(var(--font), 0.8);
+  padding: 4px;
+  border-radius: calc(var(--rounded) - 8px);
+  background-color: transparent;
+}
+
+button.option:hover {
+  background-color: rgba(var(--font), 0.1);
+}
+
+button.option.edit:hover {
+  color: var(--primary);
+}
+
+button.option.delete:hover {
+  color: var(--delete);
+}
+
+button.option span {
+  font-size: 18px;
+}
